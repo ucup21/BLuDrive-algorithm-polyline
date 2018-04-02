@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".activity.RegisterActivity"
+android:background="#fff"
+android:id="@+id/scrollViewuser">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+             <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                 android:layout_marginTop="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:textAlignment="center"
+                        style="@style/AlertDialog.AppCompat"
+                        android:textColor="#fff"
+                        android:background="#FF0000"
+                        android:padding="10dp"
+                        android:textSize="14dp"
+                        android:visibility="gone"
+                        android:id="@+id/result"/>
+
+
+
+                    <EditText
+                        android:drawableStart="@drawable/ic_account_circle_24dp"
+                        android:drawableLeft="@drawable/ic_account_circle_24dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:padding="10dp"
+                        android:hint=" Username"
+                        android:singleLine="true"
+                        android:background="@color/colorPrimary"
+                        android:textColorHint="#fff"
+                        android:textColor="#fff"
+                        android:typeface="serif"
+                        android:id="@+id/txtUsername"
+                        />
+
+                    <EditText
+                        android:id="@+id/txtEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@color/colorPrimary"
+                        android:drawableLeft="@drawable/ic_email_24dp"
+                        android:drawableStart="@drawable/ic_email_24dp"
+                        android:hint=" Email"
+                        android:inputType="textEmailAddress"
+                        android:padding="10dp"
+                        android:singleLine="true"
+                        android:textColor="#fff"
+                        android:textColorHint="#fff"
+                        android:typeface="serif" />
+
+                    <EditText
+                        android:drawableStart="@drawable/ic_person_24dp"
+                        android:drawableLeft="@drawable/ic_person_24dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:padding="10dp"
+                        android:hint=" Nama"
+                        android:singleLine="true"
+                        android:background="@color/colorPrimary"
+                        android:textColorHint="#fff"
+                        android:textColor="#fff"
+                        android:typeface="serif"
+                        android:id="@+id/txtName"
+                        />
+
+                    <EditText
+                        android:drawableStart="@drawable/ic_phone_iphone_24dp_white"
+                        android:drawableLeft="@drawable/ic_phone_iphone_24dp_white"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:padding="10dp"
+                        android:hint=" No.Telepon/HP"
+                        android:singleLine="true"
+                        android:background="@color/colorPrimary"
+                        android:textColorHint="#fff"
+                        android:textColor="#fff"
+                        android:typeface="serif"
+                        android:id="@+id/txtTelp"
+                        />
+
+                    <EditText
+                        android:drawableStart="@drawable/ic_https_24dp"
+                        android:drawableLeft="@drawable/ic_https_24dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:padding="10dp"
+                        android:hint=" Password"
+                        android:background="@color/colorPrimary"
+                        android:textColorHint="#fff"
+                        android:textColor="#fff"
+                        android:typeface="serif"
+                        android:id="@+id/txtPassword"/>
+
+                    <Button
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:padding="10dp"
+                        android:paddingLeft="30dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/button"
+                        android:text="Daftar"
+                        android:drawableLeft="@drawable/ic_check_24dp"
+                        android:pointerIcon="hand"
+                        android:textColor="#fff"
+                        android:typeface="serif"
+                        android:onClick="save"
+                        android:id="@+id/btnDaftar"
+                        android:nestedScrollingEnabled="false"
+                        android:layout_marginBottom="30dp"/>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+
+</ScrollView>

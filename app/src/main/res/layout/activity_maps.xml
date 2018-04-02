@@ -1,0 +1,172 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:fitsSystemWindows="true">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/collapsing_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="215dp"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:contentScrim="?attr/colorPrimary"
+            app:expandedTitleTextAppearance="@android:color/transparent"
+            android:fitsSystemWindows="true">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <EditText
+                android:drawableStart="@drawable/ic_person_black_24dp"
+                android:drawableLeft="@drawable/ic_person_black_24dp"
+                android:id="@+id/txtNama"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:focusable="false" />
+
+            <EditText
+                android:drawableStart="@drawable/ic_phone_black_24dp"
+                android:drawableLeft="@drawable/ic_phone_black_24dp"
+                android:id="@+id/txtTelepon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorLink="#0000FF"
+                android:focusable="false"/>
+        </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <EditText
+                    android:id="@+id/txtTanggalJemput"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/ic_event_available_black_24dp"
+                    android:drawableLeft="@drawable/ic_event_available_black_24dp"
+                    android:focusable="false"/>
+
+                <EditText
+                    android:drawableStart="@drawable/ic_access_time_black_24dp_2"
+                    android:drawableLeft="@drawable/ic_access_time_black_24dp_2"
+                    android:id="@+id/txtWaktu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusable="false"/>
+
+
+            </LinearLayout>
+
+            <EditText
+                android:drawableStart="@drawable/ic_person_pin_circle_black_24dp_2"
+                android:drawableLeft="@drawable/ic_person_pin_circle_black_24dp_2"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:id="@+id/txtJemput"
+                android:focusable="false"/>
+
+            <EditText
+                android:drawableStart="@drawable/ic_place_black_24dp_2"
+                android:drawableLeft="@drawable/ic_place_black_24dp_2"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:focusable="false"
+                android:id="@+id/txtTujuan"/>
+
+            <EditText
+                android:drawableStart="@drawable/ic_event_note_black_24dp_2"
+                android:drawableLeft="@drawable/ic_event_note_black_24dp_2"
+                android:id="@+id/txtKeterangan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="false"/>
+
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                android:title="Test"
+                app:layout_collapseMode="pin" />
+            </LinearLayout>
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Temukan Rute"
+            android:id="@+id/btnFindPath" />
+        <ImageView
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_distance"/>
+        <TextView
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0 km"
+            android:id="@+id/tvDistance" />
+
+        <ImageView
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:padding="5dp"
+            android:src="@drawable/ic_clock"/>
+        <TextView
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0 min"
+            android:id="@+id/tvDuration" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.AppCompatButton
+            style="@style/Widget.AppCompat.Button"
+            android:id="@+id/btnTerima"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/buttonhijau"
+            android:text="SELESAI DIANTARKAN" />
+
+    </LinearLayout>
+
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

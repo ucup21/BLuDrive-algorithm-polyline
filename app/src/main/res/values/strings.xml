@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">BLuDrive</string>
+    <string name="title_activity_main">BLuDrive</string>
+    <string name="lokasi_jemput">Lokasi Jemput</string>
+    <string name="lokasi_tujuan">Lokasi Tujuan</string>
+    <string name="Daftar_Pesanan">Daftar Order</string>
+    <string-array name="android_layout_arrays">
+        <item>======Pilih Jenis Mobil======</item>
+        <item>Avanza</item>
+        <item>Xenia</item>
+        <item>Ayla</item>
+        <item>Bus</item>
+    </string-array>
+    <string-array name="android_layout_arrays2">
+        <item>======Pilih Jenis Mobil======</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string-array name="maptype_arrays">
+        <item>Hybrid</item>
+        <item>None</item>
+        <item>Normal</item>
+        <item>Statellite</item>
+        <item>Terrain</item>
+    </string-array>
+</resources>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single" android:id="@+id/pesan">
+        <item
+            android:id="@+id/nav_pesanan"
+            android:icon="@drawable/ic_receipt_24dp"
+            android:title="Pemesanan" />
+        <item
+            android:id="@+id/nav_riwayat"
+            android:icon="@drawable/ic_history_black_24dp"
+            android:title="History" />
+    </group>
+
+    <group android:checkableBehavior="single" android:id="@+id/profile">
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/ic_account_circle_24dp1"
+            android:title="Profile" />
+        <item
+            android:id="@+id/nav_password"
+            android:icon="@drawable/ic_https_24dp_black"
+            android:title="Ubah Password" />
+    </group>
+
+    <group android:checkableBehavior="single" android:id="@+id/about">
+        <item
+            android:id="@+id/nav_contactus"
+            android:icon="@drawable/ic_email_24dp_black"
+            android:title="Kontak BLuDrive" />
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@drawable/ic_info_outline_black_24dp"
+            android:title="Tentang" />
+    </group>
+
+    <group android:checkableBehavior="single" android:id="@+id/logout">
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/logout"
+            android:title="Logout" />
+    </group>
+
+
+</menu>
